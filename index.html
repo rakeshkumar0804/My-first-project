@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Currency Converter Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="toggleTheme">🌙</button>
+
+      <h2>💱 Currency Converter</h2>
+
+      <input type="number" id="amount" value="1" />
+
+      <div class="row">
+        <div class="box">
+          <input
+            type="text"
+            id="searchFrom"
+            placeholder="Search..."
+          />
+          <img id="fromFlag" />
+          <select id="from"></select>
+        </div>
+
+        <button id="swap">⇄</button>
+
+        <div class="box">
+          <input
+            type="text"
+            id="searchTo"
+            placeholder="Search..."
+          />
+          <img id="toFlag" />
+          <select id="to"></select>
+        </div>
+      </div>
+
+      <p id="result">Loading...</p>
+
+      <h4>History</h4>
+      <ul id="history"></ul>
+
+      <button id="clearHistory">🗑️</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
